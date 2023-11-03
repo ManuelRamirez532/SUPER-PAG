@@ -1,0 +1,265 @@
+insert into usuario(id_usuario, nombre, apellido, genero, fec_nac, altura, peso)
+values(101, "jose", "rodrigez", "masculino", "2002/11/06", 1.73, 68),
+(102, "maria", "nuñez", "femenino", "2002/11/06", 1.55, 58),
+(103, "santiago", "bernal", "masculino", "2002/11/06", 1.78, 60),
+(104, "andrea", "avila", "femenino", "2002/11/06", 1.82, 63),
+(105, "dayanna", "bello", "femenino", "2002/11/06", 1.55, 61),
+(106, "manuel", "ramirez", "masculino", "2002/11/06", 1.82, 68),
+(107, "wilson", "muñoz", "masculino", "2002/11/06", 1.77, 58),
+(108, "cristian", "cardenas", "masculino", "2002/11/06", 1.78, 80); 
+
+select * from usuario;
+
+insert into rutina(id_rutina, tipo_rutina, rutina)
+values(11, "principiante (bajo)", "	Flexiones (20 segundos)
+Zancadas con peso (20 segundos)
+	Remo con peso (20 segundos)
+	Rodillas arriba (20 segundos)
+	Sentadillas (20 segundos)
+	Jumping jacks (20 segundos)
+"),
+(12, "principiante (medio)", "
+	Flexiones (40 segundos)
+	Zancadas con peso (40 segundos)
+	Remo con peso (40 segundos)
+	Rodillas arriba (40 segundos)
+	Sentadillas (40 segundos)
+	Jumping  (40 segundos)
+	40 elevaciónes de rodillas.
+	40 abdominales bicicleta.
+	40 flexiones con impulso.
+"),
+
+(13, "principiante(alto)", "	Flexiones (80 segundos)
+	Zancadas con peso (80 segundos)
+	Remo con peso (80 segundos)
+	Rodillas arriba (80 segundos)
+    Sentadillas (80 segundos)
+	Jumping jacks (80 segundos)
+	80 elevaciónes de rodillas.
+	80 abdominales bicicleta.
+	80 flexiones con impulso.
+"),
+
+(21, " INTERMEDIO(bajo)", "	40 Sentadilla básica
+	40Zancada básica
+	40 Equilibrio con una pierna
+	40 Zancada hacia atrás
+	40 puente de una sola pierna
+	40 sentadilla dividida búlgara
+	40 Puente de glúteos
+	40 media sentadilla con una sola pierna
+	40 Elevación de pantorrilla con pierna recta
+	40 Fondos de tríceps
+	40 Burpee
+	40 nadadores
+"),
+
+(22, "INTERMEDIO (medio)", "	80 Sentadilla básica
+	80 Zancada básica
+	80 Equilibrio con una pierna
+	80 Zancada hacia atrás
+	80 puente de una sola pierna
+	80 sentadilla dividida búlgara
+	80 Puente de glúteos
+	80 media sentadilla con una sola pierna
+	80 Elevación de pantorrilla con pierna recta
+	80 Fondos de tríceps
+	80 Burpee
+	80 nadadores
+"),
+
+(23, "INTERMEDIO (alto)", "	160 Sentadilla básica
+	160 Zancada básica
+	160 Equilibrio con una pierna
+	160 Zancada hacia atrás
+	160 puente de una sola pierna
+	160 sentadilla dividida búlgara
+	160 Puente de glúteos
+	160 media sentadilla con una sola pierna
+	160 Elevación de pantorrilla con pierna recta
+	160 Fondos de tríceps
+	160 Burpee
+	160 nadadores
+"),
+
+(31, "avanzado (bajo)", "	40 Sentadilla básica
+40 Zancada básica
+40 Equilibrio con una pierna
+40 Zancada hacia atrás
+40 puente de una sola pierna
+40 sentadilla dividida búlgara
+40 Puente de glúteos
+40 media sentadilla con una sola pierna
+40 Elevación de40 nadadores
+Flexiones (40 segundos)
+Zancadas con peso (40 segundos)
+Remo con peso (40 segundos)
+Rodillas arriba (40 segundos)
+Sentadillas (40 segundos)
+Jumping jacks (40 segundos)
+40 elevaciónes de rodillas.
+40 abdominales bicicleta.
+40 flexiones con impulso.
+"),
+
+(32, "avanzado (medio)","80 Sentadilla básica
+80 Zancada básica
+80 Equilibrio con una pierna
+80 Zancada hacia atrás
+80 puente de una sola pierna
+80 sentadilla dividida búlgara
+80 Puente de glúteos
+80 media sentadilla con una sola pierna
+80 Elevación de pantorrilla con pierna recta
+80 Fondos de tríceps
+80 Burpee
+80 nadadores
+Flexiones (60 segundos)
+Zancadas con peso (60 segundos)
+Remo con peso (60 segundos)
+Rodillas arriba (60 segundos)
+Sentadillas (60 segundos)
+Jumping jacks (60 segundos)
+60 elevaciónes de rodillas.
+60 abdominales bicicleta.
+60 flexiones con impulso.
+"),
+
+(33, "avanzado (alto)", "160 Sentadilla básica
+160 Zancada básica
+160 Equilibrio con una pierna
+160 Zancada hacia atrás
+160 puente de una sola pierna
+160 sentadilla dividida búlgara
+160 Puente de glúteos
+160 media sentadilla con una sola pierna
+160 Elevación de pantorrilla con pierna recta
+160 Fondos de tríceps
+160 Burpee
+160 nadadores
+Flexiones (80 segundos)
+Zancadas con peso (80 segundos)
+Remo con peso (80 segundos)
+Rodillas arriba (80 segundos)
+Sentadillas (80 segundos)
+Jumping jacks (80 segundos)
+80 elevaciónes de rodillas.
+80 abdominales bicicleta.
+80 flexiones con impulso.
+");
+
+select *from rutina;
+
+insert into recomendaciones(id_recomendaciones, recomendaciones)
+values(1, "Jugar en forma activa con niños.
+Andar en bicicleta a un ritmo de suave.
+Trotar con un ritmo moderado
+Practicar algún deporte dos o tres veces a la semana 
+Practicar danza (bailar)
+No consumir menos azucares 
+Consuma proteínas, grasas y verduras
+Cada una de sus comidas debe incluir una fuente de proteínas, una fuente de grasas y vegetales bajos en carbohidratos.
+"),
+	(2, "Jugar en forma activa con niños.
+Andar en bicicleta a un ritmo de suave.
+Trotar con un ritmo moderado
+Practicar algún deporte dos o tres veces a la semana 
+Practicar danza (bailar)
+No consumir menos azucares 
+Consuma proteínas, grasas y verduras
+Cada una de sus comidas debe incluir una fuente de proteínas, una fuente de grasas y vegetales bajos en carbohidratos.
+"),
+    (3, "Jugar en forma activa con niños.
+Andar en bicicleta a un ritmo de suave.
+Trotar con un ritmo moderado
+Practicar algún deporte dos o tres veces a la semana 
+Practicar danza (bailar)
+No consumir menos azucares 
+Consuma proteínas, grasas y verduras
+Cada una de sus comidas debe incluir una fuente de proteínas, una fuente de grasas y vegetales bajos en carbohidratos.
+"),
+    (4, "Jugar en forma activa con niños.
+Andar en bicicleta a un ritmo de suave.
+Trotar con un ritmo moderado
+Practicar algún deporte dos o tres veces a la semana 
+Practicar danza (bailar)
+No consumir menos azucares 
+Consuma proteínas, grasas y verduras
+Cada una de sus comidas debe incluir una fuente de proteínas, una fuente de grasas y vegetales bajos en carbohidratos.
+"),
+    (5, "Jugar en forma activa con niños.
+Andar en bicicleta a un ritmo de suave.
+Trotar con un ritmo moderado
+Practicar algún deporte dos o tres veces a la semana 
+Practicar danza (bailar)
+No consumir menos azucares 
+Consuma proteínas, grasas y verduras
+Cada una de sus comidas debe incluir una fuente de proteínas, una fuente de grasas y vegetales bajos en carbohidratos.
+"),
+    (6, "Jugar en forma activa con niños.
+Andar en bicicleta a un ritmo de suave.
+Trotar con un ritmo moderado
+Practicar algún deporte dos o tres veces a la semana 
+Practicar danza (bailar)
+No consumir menos azucares 
+Consuma proteínas, grasas y verduras
+Cada una de sus comidas debe incluir una fuente de proteínas, una fuente de grasas y vegetales bajos en carbohidratos.
+"),
+    (7, "Jugar en forma activa con niños.
+Andar en bicicleta a un ritmo de suave.
+Trotar con un ritmo moderado
+Practicar algún deporte dos o tres veces a la semana 
+Practicar danza (bailar)
+No consumir menos azucares 
+Consuma proteínas, grasas y verduras
+Cada una de sus comidas debe incluir una fuente de proteínas, una fuente de grasas y vegetales bajos en carbohidratos.
+"),
+    (8, "Jugar en forma activa con niños.
+Andar en bicicleta a un ritmo de suave.
+Trotar con un ritmo moderado
+Practicar algún deporte dos o tres veces a la semana 
+Practicar danza (bailar)
+No consumir menos azucares 
+Consuma proteínas, grasas y verduras
+Cada una de sus comidas debe incluir una fuente de proteínas, una fuente de grasas y vegetales bajos en carbohidratos.
+"),
+    (9, "Jugar en forma activa con niños.
+Andar en bicicleta a un ritmo de suave.
+Trotar con un ritmo moderado
+Practicar algún deporte dos o tres veces a la semana 
+Practicar danza (bailar)
+No consumir menos azucares 
+Consuma proteínas, grasas y verduras
+Cada una de sus comidas debe incluir una fuente de proteínas, una fuente de grasas y vegetales bajos en carbohidratos.
+");
+
+select * from recomendaciones;
+
+insert into IMC(id_IMC, porcentaje, def_peso)
+values(1, "Menos de 18.5","Bajo peso" ),
+(2, "19 - 25", "Normal"),
+(3, "25 - 30", "Sobrepeso"),
+(4, "Max de 30" , "Obesidad");
+
+select * from IMC;
+
+insert into usu_imc
+values(101,2),
+(102,3),
+(103,4),
+(104,1),
+(105,1),
+(106,3),
+(107,2),
+(108,4)
+; 
+select * from usu_imc;
+
+insert into rec_rut 
+values(1,8,22),
+(2,5,33),
+(3,3,13),
+(4,2,31);
+
+select * from rec_rut;

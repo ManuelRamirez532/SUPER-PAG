@@ -1,0 +1,57 @@
+create database super_pag;
+use super_pag;
+
+
+
+
+create table usuario(
+id_usuario INT primary key not null,
+nombre varchar(60) not null,
+apellido varchar(60) not null,
+genero varchar (20) not null,
+fec_nac date not null,
+altura float not null,
+peso float not null
+);
+
+create table rutina(
+id_rutina INT primary key not null,
+tipo_rutina varchar(60) not null,
+rutina varchar(1000) not null
+);
+
+create table recomendaciones(
+id_recomendaciones INT primary key not null,
+recomendaciones varchar(1000) not null
+);
+
+create table IMC(
+id_IMC INT primary key not null,
+porcentaje varchar (30) not null,
+def_peso varchar (30) not null
+);
+
+
+create table rec_rut(
+id int auto_increment primary key,
+rec int not null,
+rut int not null,
+foreign key (rec) references recomendaciones(id_recomendaciones),
+foreign key (rut) references rutina(id_rutina)
+);
+
+
+create table rec_rut_IMC(
+idrri int auto_increment primary key,
+id_rri int not null,
+id__IMC int not null,
+foreign key (id_rri) references rec_rut(id),
+foreign key (id__IMC) references IMC  (id_IMC)
+);
+
+create table usu_imc(
+usu int not null,
+imc int not null,
+foreign  key (usu) references usuario (id_usuario),
+foreign key (imc) references IMC (id_IMc)
+);
